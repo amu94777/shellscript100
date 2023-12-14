@@ -11,7 +11,6 @@ then
 else
     echo " u r a root user "
 fi        
-echo " I AM INSTALLING MYSQL "
 yum install mysql -y &>> $LOGFILE
 if [ $? -ne 0 ]
 then
