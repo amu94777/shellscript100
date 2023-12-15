@@ -20,7 +20,7 @@ then
 else
     echo -e "$G you are a root user $N"
 fi
-echo -e "$G *******NOW I AM INSATLLING GIT******** $N"
+echo -e "$G *******NOW I AM INSATLLING SOME PACKAGES******** $N"
 yum install git -y
 VALIDATE $? "installed git"
 
