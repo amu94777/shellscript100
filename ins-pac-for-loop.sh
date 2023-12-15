@@ -6,7 +6,8 @@ VALIDATE(){
        echo -e "$R ERROR::::$2 is not successful $N"
        exit 1
      else
-       echo -e "$G $2 is successfull $N"     
+       echo -e "$G $2 is successfull $N" 
+     fi      
 }
 R="\e[31m"
 G="\e[32m"
