@@ -31,11 +31,11 @@ echo -e "$G********I AM INSTALLING SOME PACKAGES NOW ******$N"
 
 for package in $@
 do
-    yum list installed $package
+    yum list installed $package &>> $LOGFILE
 
     if [ $? -ne 0 ]
     then
-           yum install $package -y
+           yum install $package -y &>> $LOGFILE
            VALIDATE $? "$package is installed"
         else
            echo "$package is already installed"   
