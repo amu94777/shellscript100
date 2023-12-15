@@ -36,9 +36,9 @@ do
     if [ $? -ne 0 ]
     then
            yum install $package -y &>> $LOGFILE
-           VALIDATE $? "$package is installed"
+           VALIDATE $? "$G $package is installed $N"
         else
-           echo "$package is already installed"   
+           echo -e "$G $package is already installed $N"   
     fi
 done
 echo -e "$Y *** total number of packages:::$#***$N"
