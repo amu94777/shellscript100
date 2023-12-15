@@ -41,7 +41,7 @@ do
            echo "$package is already installed"   
     fi
 done
-echo "$Y *** total number of packages:::$#***$N"
+echo -e "$Y *** total number of packages:::$#***$N"
 
-echo "$Y ***all installed packages::::::$@***$N"
+echo -e "$Y ***all installed packages::::::$@***$N"
 
