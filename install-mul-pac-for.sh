@@ -17,7 +17,7 @@ fi
 }
 echo -e "$Y********* CHECKING I AM A ROOT USER OR NOT **********$N"
 
-if [ $ID -ne 0]
+if [ $ID -ne 0 ]
 then
     echo -e "$R ERROR:::you are not a root user $N"
     exit 1
