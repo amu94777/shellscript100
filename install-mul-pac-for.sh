@@ -38,7 +38,7 @@ do
            yum install $package -y &>> $LOGFILE
            VALIDATE $? "$G $package is installed $N"
         else
-           echo -e "$G $package is already installed $N"   
+           echo -e "$G $package is already installed  $N $R SKIPPING $N"   
     fi
 done
 echo -e "$Y *** total number of packages:::$#***$N"
