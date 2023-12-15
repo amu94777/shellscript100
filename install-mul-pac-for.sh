@@ -15,7 +15,7 @@ VALIDATE(){
     echo -e "$G $2 is successfull $N"
 fi         
 }
-echo "$Y********* CHECKING I AM A ROOT USER OR NOT **********$N"
+echo -e "$Y********* CHECKING I AM A ROOT USER OR NOT **********$N"
 
 if [ $ID -ne 0]
 then
@@ -27,7 +27,7 @@ fi
 #the packages want to install and give all in runtime
 #i dont know how many packages and which packages are install,
 #that y i give $@ in for loop
-echo "$G********I AM INSTALLING SOME PACKAGES NOW ******$N"
+echo -e "$G********I AM INSTALLING SOME PACKAGES NOW ******$N"
 
 for package in $@
 do
