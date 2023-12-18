@@ -7,7 +7,7 @@ do
    PARTITION=$(echo $line | awk '{print $1F}')
    if [ $USAGE -ge $THESH_HOLD ]
    then
-    message+="HIGH DISK USAGE ON $PARTITION:$USAGE"
+    message+="HIGH DISK USAGE ON $PARTITION:$USAGE  \n"
    fi 
 done <<< $DISK_USG
 echo "message::$message"
