@@ -5,7 +5,7 @@ while IFS= read line
 do
    USAGE=$(echo $line | awk '{print $6F}' | cut -d % -f1)
    PARTITION=$(echo $line | awk '{print $1F}')
-   if [ $USAGE -ge THESH_HOLD ]
+   if [ $USAGE -ge $THESH_HOLD ]
    then
     message+="HIGH DISK USAGE ON $PARTITION:$USAGE"
    fi 
