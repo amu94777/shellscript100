@@ -7,4 +7,4 @@ else
      echo "the $SOURCEPATH IS EXIST"
 fi     
 
-    
+ DEL_FILE=$(find $SOURCEPATH -type f -mtime +10 -name "*.log" )   
