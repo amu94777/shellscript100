@@ -6,7 +6,7 @@ then
 else
     echo "$SOU_PATH is exist"
 fi        
-DELETE_FILES=$(find $SOU_PATH -type f -mtime +8 -name "*.java")
+DELETE_FILES=$(find $SOU_PATH -type f -mtime +15 -name "*.java")
 
 while IFS= read -r line
 do
