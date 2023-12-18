@@ -10,4 +10,4 @@ do
     message+="HIGH DISK USAGE ON $PARTITION:$USAGE  \n"
    fi 
 done <<< $DISK_USG
-echo "message::$message"
+echo -e "message::$message"
