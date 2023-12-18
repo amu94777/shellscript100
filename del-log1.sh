@@ -10,6 +10,6 @@ DELETE_FILES=$(find $SOU_PATH -type f -mtime +10 -name "*.java")
 echo "$DELETE_FILES"
 while IFS= read -r line
 do
-  echo "Deleting file::: $line"
+  echo "$line"
   rm -rf $line
 done <<< $DELETE_FILES  
