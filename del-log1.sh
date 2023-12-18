@@ -1,5 +1,5 @@
 #!/bin/bash
-SOU_PATH="/tmp/shell1-logs"
+SOU_PATH="/tmp/shell-logs-01"
 if [ ! -d $SOU_PATH ]
 then    
     echo "$SOU_PATH is not exist"
