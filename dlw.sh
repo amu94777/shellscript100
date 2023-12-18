@@ -1,6 +1,6 @@
 ###delete lofile using while loop
 #!/bin/bash
-SOURCE_PATH="/tmp/all-logs"
+SOURCE_PATH="/tmp/mypgmlogs"
 if [ ! -d $SOURCE-PATH ]
 then
     echo "$SOURCE_PATH directory is not exist"
