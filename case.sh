@@ -11,8 +11,8 @@ USAGE(){
 }
 while getops ":n:w:h" opt; do
 case $opt in 
- n) NAME= "$OPTARG"
- w) WISHES= "$OPTARG"
+ n) NAME= "$OPTARG";;
+ w) WISHES= "$OPTARG";;
  h|*) USAGE; exit;;
  esac
  done
