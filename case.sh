@@ -22,6 +22,7 @@ if [ -z $NAME ] || [ -z $WISHES ];then
 echo "ERROR::::both -n and -w is mantadatry"
 USAGE; 
 fi
+echo "hello $NAME $WISHES I HAVE BEEN LEARNING SHELLSCRIPTING"
 
 
 
