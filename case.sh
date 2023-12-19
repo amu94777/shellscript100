@@ -18,7 +18,7 @@ case $opt in
  h) USAGE; exit;;
 esac
 done
-if [ -z $NAME ] || [ -z $WISHES ];then
+if [ -z $NAME ] || [ -z $WISHES ]; then
 echo "ERROR::::both -n and -w is mantadatry"
 USAGE
 exit 1
