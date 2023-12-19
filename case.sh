@@ -14,6 +14,6 @@ case $opt in
  n) NAME="$OPTARG";;
  w) WISHES="$OPTARG";;
  h|*) USAGE ; exit;;
- esac
- done
+esac
+done
 
