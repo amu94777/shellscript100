@@ -14,7 +14,7 @@ case $opt in
  n) NAME="$OPTARG";;
  w) WISHES="$OPTARG";;
  :) USAGE; exit;;
- /?) echo "invalid options:::-"$OPTARG" >&2; USAGE; exit;; 
+ \?) echo "invalid options:::-"$OPTARG"" >&2; USAGE; exit;; 
  h) USAGE; exit;;
 esac
 done
