@@ -16,6 +16,6 @@ IP_ADDRESS=$(aws ec2 run-instances --image-id ami-03265a0778a880afb \
 --instance-type $INSTANCE_TYPE \
 --security-group-ids sg-089f2b87f4fcb3a7e \
 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" \
---query 'instance[0].PrivateIpAddress' --output text) 
-echo "$i : $IP_ADDRESS"
+--query 'Instances[0].PrivateIpAddress' --output text) 
+echo "$i: $IP_ADDRESS"
 done        
