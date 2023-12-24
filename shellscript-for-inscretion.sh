@@ -3,7 +3,7 @@ AMI=ami-03265a0778a880afb
 SG=sg-089f2b87f4fcb3a7e
 INSTANCES=("mongodb" "mysql" "redis" "web" "shipping" "payment" "rabbitmq" 
            "cart" "catalogue" "user" "dispatch")
-for i in ${INSTANCES[0]}
+for i in ${INSTANCES[@]}
 do 
    echo "$i" 
    if [ $i == mongodb ] || [ $i == mysql ] || [ $i == shipping ] 
