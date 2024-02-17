@@ -1,6 +1,6 @@
 #!/bin/bash
-AMI=ami-03265a0778a880afb
-SG=sg-089f2b87f4fcb3a7e
+AMI=ami-0f3c7d07486cad139
+SG=sg-07f9b7a0eda8a89e4
 INSTANCES=("mongodb" "mysql" "redis" "web" "shipping" "payment" "rabbitmq" 
            "cart" "catalogue" "user" "dispatch")
 ZONE_ID=Z04538903T1NEGY1K95YE
@@ -14,9 +14,9 @@ do
    else
      INSTANCE_TYPE="t2.micro"
    fi
-IP_ADDRESS=$(aws ec2 run-instances --image-id ami-03265a0778a880afb \
+IP_ADDRESS=$(aws ec2 run-instances --image-id ami-0f3c7d07486cad139 \
 --instance-type $INSTANCE_TYPE \
---security-group-ids sg-089f2b87f4fcb3a7e \
+--security-group-ids sg-07f9b7a0eda8a89e4 \
 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" \
 --query 'Instances[0].PrivateIpAddress' --output text) 
 echo "$i: $IP_ADDRESS"
