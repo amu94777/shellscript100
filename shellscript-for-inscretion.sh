@@ -1,5 +1,5 @@
 #!/bin/bash
-AMI=ami-0f3c7d07486cad139
+AMI=ami-0f3c7d07486cad139     ####everytime we need to change ami and sg if u delete the main instance
 SG=sg-07f9b7a0eda8a89e4
 INSTANCES=("mongodb" "mysql" "redis" "web" "shipping" "payment" "rabbitmq" 
            "cart" "catalogue" "user" "dispatch")
@@ -28,7 +28,7 @@ echo "$i: $IP_ADDRESS"
     {
         "Comment": "Creating a record set for cognito endpoint"
         ,"Changes": [{
-        "Action"              : "CREATE"
+        "Action"              : "UPCERT"
         ,"ResourceRecordSet"  : {
             "Name"              : "'$i'.'$DOMAIN_NAME'"
             ,"Type"             : "A"
